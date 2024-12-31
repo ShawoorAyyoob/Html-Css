@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+    <style>
+        #para{
+            display: none;
+        }
+    </style>
+    <script>
+        function show(){
+            let para = document.getElementById('para');
+            para.style.display = 'block'
+        }
+        function hide(){
+            let para = document.getElementById('para');
+            para.style.display = 'none'
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+    <h2>Show and Hide</h2>
+    <button onclick="show()">Show</button>
+    <button onclick="hide()">Hide</button>
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quis ratione itaque aliquam soluta dicta adipisci?</p>
+</body>
+</html>

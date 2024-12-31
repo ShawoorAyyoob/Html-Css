@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Ex.2</title>
+    <style>
+        #tog{
+            display: none;
+        }
+    </style>
+    <script>
+        function tog(){
+            let tog = document.getElementById('tog');
+            if(tog.style.display == 'none') {
+                 tog.style.display = 'block';
+            }
+               
+            else{
+                tog.style.display = 'none';
+            }
+                
+        }
+    </script>
+</head>
+<body>
+    <h1>Toggle Text</h1>
+    <button onclick="tog()">Toggle</button>
+    <p id="tog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellat vero deleniti quod blanditiis maxime nulla veniam fugit</p>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On-Off</title>
+    <style>
+        img{
+            margin: 20px;
+            border: 4px solid cyan;
+        }
+        div{
+            padding: 15px;
+        }
+        button{
+            background-color: rgb(238, 185, 238);
+            padding: 4px;
+            border-radius: 40px;
+        }
+        p{
+            padding: 8px;
+            
+        }
+    </style>
+    <script>
+        function switchOn(){
+            let bulbimg = document.getElementById('bulbimg');
+           bulbimg.src = "images/bon.webp"
+        }
+        function switchOff(){
+            let bulbimg = document.getElementById('bulbimg');
+            bulbimg.src = "images/boff.jpg"
+        }
+        function Toggle(){
+            let bulbimg = document.getElementById('bulbimg');
+            console.log(bulbimg.src ); 
+            if (bulbimg.src.includes ("images/boff.jpg")){
+              bulbimg.src = "images/bon.webp"
+            }
+            else{
+                bulbimg.src = "images/boff.jpg"
+        }
+        }
+        function Styles(){
+            let para = document.getElementById('para');
+            para.style.backgroundColor = 'lightCoral';
+            para.style.border = '2px solid cyan';
+            para.style.textAlign = 'italic';
+            para.style.padding = '5px';
+        }
+    </script>
+</head>
+<body>
+    <h1>Bulb-Style JS</h1>
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quia reprehenderit molestiae. Quasi iusto, voluptatem, quas magni nihil sint impedit deserunt consequuntur, numquam aspernatur similique explicabo dolorum adipisci eveniet eligendi!</p>
+    <div>
+        <button onclick="switchOn()">
+        Bulb On
+    </button>
+    <button onclick="switchOff()">
+        Bulb Off
+    </button>
+    <button onclick="Toggle()">
+        Toggle
+    </button>
+    <button onclick="Styles()">
+        Styles
+    </button>
+</div>
+<div class="bulb">
+    <img id="bulbimg" src="images/boff.jpg" alt="boff" width="150px">
+</div>
+    
+</body>
+</html>

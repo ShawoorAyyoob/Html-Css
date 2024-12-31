@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            font-weight: bolder;
+            background-color: plum;
+            color: rgb(79, 79, 246);
+            font-style: italic;
+            font-size: 1em;
+            text-align: center;
+        }        
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
+        aside {
+            background-color: rgb(126, 251, 251);
+            flex: 1 0 100px;
+            padding: 10px;
+            order: 1;
+        }
+
+        main {
+            background-color: rgb(136, 240, 154);
+            flex: 2 0 200px;
+            padding: 10px;
+            order: 2;
+        }
+        footer {
+            background-color: rgb(107, 144, 230);
+            font-size: 0.5em;
+            text-align: center;
+        }
+        @media (max-width:750px) {
+            section {
+                flex-direction: column;
+            }
+            main,
+            aside {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome</h1>
+        </header>
+        <section>
+            <aside>
+                <h2>Sidebar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio accusantium obcaecati repellat ducimus
+                    exercitationem nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </aside>
+            <main>
+                <h2>Main Content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus amet quo sit iure quas earum
+                    cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum autem optio natus non aspernatur
+                    obcaecati. Et tempora atque consequuntur delectus assumenda corrupti dolore modi nostrum sint qui
+                    quo, illum quis.</p>
+            </main>
+        </section>
+        <footer>
+            <h3>&copy; SK2004</h3>
+        </footer>
+    </div>
+</body>
+
+</html>

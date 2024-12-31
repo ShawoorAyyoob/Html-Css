@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Width</title>
+    <style>
+        .container {
+            background-color: burlywood;
+            border: 3px solid greenyellow;
+            margin: 15px;
+            padding: 10px;
+        }
+
+        .mw1 {
+            width: 500px;
+            background-color: khaki;
+        }
+
+        .mw2 {
+            max-width: 500px;
+            background-color: rgb(243, 162, 132)
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fixed Width </h1>
+    <div class="container mw1">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa suscipit, vitae corrupti rem commodi
+            architecto non ex nesciunt, eum dolore quisquam odio tenetur voluptatibus omnis culpa, dolorum itaque
+            provident magnam.
+        </p>
+        <img src="images/visual-studio-code.jpg" alt="visual-studio-code">
+    </div>
+    <h2>Max Width </h2>
+    <div class="container mw2">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa suscipit, vitae corrupti rem commodi
+            architecto non ex nesciunt, eum dolore quisquam odio tenetur voluptatibus omnis culpa, dolorum itaque
+            provident magnam.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore iusto blanditiis ex sapiente consequuntur
+            minus sed corrupti.
+        </p>
+        <img src="images/visual-studio-code.jpg" alt="visual-studio-code">
+    </div>
+</body>
+
+</html>

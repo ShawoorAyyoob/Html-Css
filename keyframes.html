@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            width: 100%;
+            height: 200px;
+            background-color: gold;
+            animation: colorChange 3s infinite;
+            
+        }
+
+        @keyframes colorChange {
+           0% {background-color: aqua;}
+           50% {background-color: coral;}
+            100% {background-color: blueviolet;}
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    
+</body>
+
+</html>

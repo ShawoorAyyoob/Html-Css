@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout-Nav</title>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: "Faculty Glyphic";
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header{
+            background-color: plum;
+            text-align: center;
+            font-size: 1em;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(211, 205, 205);
+            line-height: 25px;
+            font-size: 10px;
+        }
+        nav a{
+            color: rgb(233, 25, 25);
+            padding: 5px;
+            text-decoration: none;
+        }
+        nav a:hover{
+            color: rgb(63, 236, 28);
+        }
+        nav a:visited{
+            color: rgb(130, 40, 130);
+        }
+        section{
+            display: flex;
+            flex: 1;           
+        }
+        main{
+            background-color: rgb(136, 169, 232);
+            padding: 15px;
+            flex: 3 1 400px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+        }
+        aside{
+            background-color: rgb(240, 151, 119);
+            padding: 15px;  
+            flex: 1 1 200px;          
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+        }
+        footer{
+            text-align: center;
+            background-color: plum;
+            font-size: 0.5em;
+        }
+        @media (max-width:720px) {
+            main,aside{
+                flex: 1 1 100%;
+            }
+            section{
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Shawoor Website</h1>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <section>
+            <main>
+                <h2>Main Content</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores quos modi id? Cum facilis, nemo cumque inventore eaque deleniti corrupti quos commodi vitae, a perferendis atque, voluptates suscipit molestiae ducimus?</p>
+            </main>
+            <aside>
+                <h2>Sidebar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, repellat et exercitationem sapiente natus veritatis ipsa dolores possimus, quo blanditiis?</p>
+            </aside>
+        </section>
+        <footer>
+            <h3 style="font-style: italic;">&copy; Visit Again @2024</h3>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css position</title>
+    <style>
+        .div1{
+            position: static;
+            background-color: rgb(245, 73, 73);
+            width: 200px;
+        }
+        .div2{
+            position: relative;
+            background-color: rgb(101, 249, 249);
+            width: 200px;
+            left: 30px;
+        }
+        .div3{
+            background-color: plum;
+            width: 200px;
+            position: relative;
+            height: 150px;
+        }
+        .div4{  
+            background-color: greenyellow;
+            width: 100px;
+            position: absolute;
+            height: 50px;
+            left: 40px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Types of CSS Position</h1>
+    <ol>
+        <li>Static</li>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ol>
+    
+    <div class="div1">
+        Static
+    </div>
+    <div class="div2">
+        Relative
+    </div>
+    <div class="div3"> 
+        <div class="div4"> 
+            Absolute
+        </div>
+</div>
+   
+</body>
+</html>
